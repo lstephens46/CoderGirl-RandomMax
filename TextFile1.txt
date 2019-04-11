@@ -1,0 +1,1 @@
+Complete the Random Max (Links to an external site.)Links to an external site. program that will take a list of 100 random integers between 0 and 1000 and output the maximum value.

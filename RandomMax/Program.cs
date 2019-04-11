@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace RandomMax
 {
@@ -6,9 +7,21 @@ namespace RandomMax
     {
         public static void Main()
         {
-            // TODO: Generate a list of 100 random integers between 0 and 1000 and ouput the maximum value.
+           
 
+            int  Min = 0;
+            int Max = 1000;
+            System.Random randNum = new Random();
+            int[] myArray = Enumerable
+                .Repeat(0, 1000)
+                .Select(i => randNum.Next(Min, Max))
+                .ToArray();
+            int largestNumber = myArray.Max();
+            Console.WriteLine(largestNumber);
             Console.ReadLine();
+
+          
+
         }
     }
 }
